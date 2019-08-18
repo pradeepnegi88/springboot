@@ -15,9 +15,4 @@ public class StudentController {
         }
         return "Student is saved!!!.";
     }
-
-    @ExceptionHandler
-    public String handleInvalidFieldException(InvalidFieldException invalidFieldException) {
-        return invalidFieldException.getMessage();
-    }
 }
